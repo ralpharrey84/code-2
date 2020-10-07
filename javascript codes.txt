@@ -1,0 +1,517 @@
+// Object
+var car ={make: 'toyota',colour:'black',mpg:34,engine:1};
+undefined
+car.make;
+"toyota"
+car.colour;
+"black"
+car.engine;
+1
+car
+{make: "toyota", colour: "black", mpg: 34, engine: 1}
+console.log(car);
+VM610:1 {make: "toyota", colour: "black", mpg: 34, engine: 1}
+undefined
+
+//Construction Function
+
+function book(title,author,pages) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    
+}
+undefined
+var book1 = new book('rush','ralph',200);
+undefined
+var book2 = new book ('aladin','kay',300);
+undefined
+book1
+book {title: "rush", author: "ralph", pages: 200}
+
+
+ARRAYS JAVASCRIPT
+
+var cars = ['volvo','jeep','nissan'];
+undefined
+cars[0];
+"volvo"
+cars[1];
+"jeep"
+cars.length;
+3
+//add value to end of array
+undefined
+//turn 'jeep' to different brand
+undefined
+//access volvo value and save in a variable called myfavoritecar
+undefined
+cars[4] ='toyota';
+"toyota"
+cars;
+(5) ["volvo", "jeep", "nissan", empty, "toyota"]
+cars[1] ='cleo'];
+VM2222:1 Uncaught SyntaxError: Unexpected token ']'
+cars[1] ='cleo';
+"cleo"
+cars;
+(5) ["volvo", "cleo", "nissan", empty, "toyota"]
+cars[0];
+"volvo"
+var favouritecar = cars[0];
+undefined
+favouritecar;
+"volvo"
+
+//ADDING ELEMENTS TO ARRAY USING UNSHIFT AND PUSH METHOD
+cars.unshift('bentley');
+6
+cars.push('rover');
+7
+
+//ARRAY CONCATENATE METTHODS
+var animals = ['goat','pig','dog'];
+undefined
+var insects = ['fly','ant','mosquitoe'];
+undefined
+insects[0];
+"fly"
+var conca = animals.concat(insects);
+undefined
+conca;
+(6) ["goat", "pig", "dog", "fly", "ant", "mosquitoe"]
+var dogs = ['bull','germanshe'];
+undefined
+var all = animals.concat(insects,dogs);
+undefined
+all;
+(8) ["goat", "pig", "dog", "fly", "ant", "mosquitoe", "bull", "germanshe"]
+
+
+//REVERSE METHOD AND SORT
+undefined
+all.reverse();
+(8) ["germanshe", "bull", "mosquitoe", "ant", "fly", "dog", "pig", "goat"]
+insects.reverse();
+(3) ["mosquitoe", "ant", "fly"]
+insects.sort();
+(3) ["ant", "fly", "mosquitoe"]
+
+
+VM4937:1 Console was cleared
+undefined
+var bodyparts = ['head','hands','legs'];
+undefined
+var randombodyparts =bodyparts;
+undefined
+var adjective = ['big','round','fat'];
+undefined
+var randomadjectives = adjective
+undefined
+adjective
+(3) ["big", "round", "fat"]
+var word = ['go','come','get'];
+undefined
+var randomwords = word;
+undefined
+word
+(3) ["go", "come", "get"]
+VM4937:1 Console was cleared
+undefined
+var bodyparts = ['head','hands','legs'];
+undefined
+var randombodyparts =bodyparts;
+undefined
+var adjective = ['big','round','fat'];
+undefined
+var randomadjectives = adjective
+undefined
+adjective
+(3) ["big", "round", "fat"]
+var word = ['go','come','get'];
+undefined
+var randomwords = word;
+undefined
+word
+(3) ["go", "come", "get"]
+
+
+
+VM7580:1 Console was cleared
+undefined
+function add() {
+    var x = 2;
+    var y = 3;
+    return x + y;
+};
+undefined
+function addTogether() {
+ var x = 20;
+ var y = 20;
+ var answer = x + y;
+ console.log(answer);
+ }
+addTogether();
+VM7728:5 40
+undefined
+function add() = 50 {
+VM7780:1 Uncaught SyntaxError: Unexpected token '='
+function add() {
+    x = 50;
+    y = 50;
+    var ans = x+y;
+    ans;
+};
+undefined
+add();
+undefined
+function sub() {
+    x = 50;
+    y = 25;
+    
+VM8011:4 Uncaught SyntaxError: Unexpected end of input
+function sub() {
+    var x = 50;
+    var y = 25;
+    var answer = x -y;
+    console.log(answer);
+};
+undefined
+function sub() {
+    var x = 50;
+    var y = 25;
+    var answer = x -y;
+    console.log(answer);
+}
+undefined
+sub();
+VM8258:5 25
+undefined
+function sub() {
+    var x = 50;
+    var y = 25;
+    var answer = x -y;
+    answer;
+}
+undefined
+sub();
+undefined
+function greeting() {
+    return 'hello'
+};
+undefined
+greeting()
+"hello"
+function add() [
+VM8489:1 Uncaught SyntaxError: Unexpected token '['
+function ad() {
+    return 4 * 2;
+};
+undefined
+AD();
+VM8615:1 Uncaught ReferenceError: AD is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM8615:1
+function gg() {
+    return 4*2
+};
+undefined
+gg();
+8
+(function() {
+ var x = 20;
+ var y = 20;
+ var answer = x + y;
+ console.log(answer);
+ })();
+VM8746:5 40
+undefined
+(function() {
+    return 'he is a boy'
+})();
+"he is a boy"
+var x =77
+undefined
+var y = x + 1;
+undefined
+Y;
+VM8940:1 Uncaught ReferenceError: Y is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM8940:1
+y
+78
+y;
+78
+(function() }
+VM8998:1 Uncaught SyntaxError: Unexpected token '}'
+(function() {
+    return 4*2
+})();
+8
+var calculate() {
+VM9109:1 Uncaught SyntaxError: Unexpected token '('
+var calculate = function() {
+    a = 2;
+    b = 5;
+    a + b:
+VM9285:4 Uncaught SyntaxError: Unexpected token ':'
+var calculate = function() {
+    a = 2;
+    b = 5;
+    var ans = a + b;
+    console.log(ans);
+};
+undefined
+calculate;
+ƒ () {
+    a = 2;
+    b = 5;
+    var ans = a + b;
+    console.log(ans);
+};
+
+//Immediately invoked function expression IFFE
+
+(function(person) {
+    return person + ' is a boy.';
+} ('john'));
+"john is a boy."
+
+//Immediately invoked function stored in a variable and called
+var gender = (function(person) {
+    return person + ' is a boy.';
+} ('john'));
+undefined
+gender;
+"john is a boy."
+
+function goodevening(name,task) {
+    return 'good evening ' + name + ' thanks for ' + task + ' !';
+};
+undefined
+goodevening('pa','the bin');
+"good evening pa thanks for the bin !"
+goodevening.length;
+2
+//IIFE
+
+(function test(name) {
+    return name + ' is a bou '
+}('jayden'));
+"jayden is a bou "
+function test(name) {
+    return name + ' is a bou '
+};
+undefined
+test('trey');
+"trey is a bou "
+
+(function rama(name,noun) {
+    return name + ' is a ' + noun
+}('ryan','girl'));
+"ryan is a girl"
+
+//
+
+function calculate() {
+    var price = 40;
+    var quantity = 6;
+    return price * quantity;
+};
+undefined
+calculate();
+240
+
+
+VM18982:1 Console was cleared
+undefined
+function studentdetails(name,age,gender) {
+    this.name = name,
+    this.age = age;
+    this.gender = gender;
+    
+    
+};
+
+undefined
+var studentdetails1 = ('ras',23,'male');
+undefined
+studentdetails1;
+"male"
+var studentdetails1 = new studentdetails ('rob', 34,'male');
+undefined
+studentdetails1;
+studentdetails {name: "rob", age: 34, gender: "male"}
+
+undefined
+
+//CONDITIONAL STATEMENTS
+var testscore = 88;
+if(testscore>90) {
+    return 'congratulations';
+} else {
+    'you failed';
+};
+"you failed"
+var x = 8;
+undefined
+var y = 4;
+undefined
+if (y>x) {
+    'really';
+};
+undefined
+else {
+VM19730:1 Uncaught SyntaxError: Unexpected token 'else'
+if(testscore>90) {
+    return 'congratulations';
+VM19456:2 Uncaught SyntaxError: Illegal return statement
+if(testscore>90) {
+     'congratulations';
+} else {
+    'you failed';
+};
+"you failed"
+var x = 8;
+undefined
+var y = 4;
+undefined
+if (y>x) {
+    'really';
+}
+undefined
+else {
+VM19740:2 Uncaught SyntaxError: Illegal return statement
+
+//SWITCH STATEMENT
+
+ var car = 'ferrari';
+
+switch(car) {
+
+    case 'porche':
+     console.log('German make');
+        break;
+        
+    case  'dudge':
+      console.log('American make');
+        break;
+        
+        
+    case 'ferrari':
+        console.log('italian make')
+        break;
+};
+VM23826:15 italian make
+undefined
+ var car = 'ferrari';
+
+switch(car) {
+
+    case 'porche':
+    'German make';
+        break;
+        
+    case  'dudge':
+     'American make';
+        break;
+        
+        
+    case 'ferrari':
+        'italian make'
+        break;
+};
+"italian make"
+ var car = 'dude';
+
+switch(car) {
+
+    case 'porche':
+    'German make';
+        break;
+        
+    case  'dudge':
+     'American make';
+        break;
+        
+        
+    case 'ferrari':
+        'italian make'
+        break;
+    
+   default:
+    'i don't know';
+};
+"American make"
+
+
+// while loop
+var i = 0;
+undefined
+while (i<=10) {
+ console.log ("<br>The number is " + i);
+    i++;
+};
+VM26232:2 <br>The number is 0
+VM26232:2 <br>The number is 1
+VM26232:2 <br>The number is 2
+VM26232:2 <br>The number is 3
+VM26232:2 <br>The number is 4
+VM26232:2 <br>The number is 5
+VM26232:2 <br>The number is 6
+VM26232:2 <br>The number is 7
+VM26232:2 <br>The number is 8
+VM26232:2 <br>The number is 9
+VM26232:2 <br>The number is 10
+10
+
+// for loop
+var animals = ['goat','pig','horse'];
+undefined
+var i =0;
+undefined
+for(i=0;i<animals.length;i++) {
+    console.log(animals[i]);
+
+
+VM26582:2 goat
+VM26582:2 pig
+VM26582:2 horse
+
+var i =0;
+undefined
+for(i=0;i<schools.length;i++) {
+    console.log(schools[i]);
+};
+VM27627:4 nursery
+VM27627:4 primary
+VM27627:4 secondary
+VM27627:4 university
+
+//if else statement in function
+var num= 1;
+function test() {
+    if(num==3) 
+   return 'odd';
+else 
+  return  'no idea';
+};
+undefined
+test();
+"no idea"
+
+//while loop 
+(3) ["jeep", "bmw", "toyota", unshift: "mercede"]
+var array =[1,23,4];
+undefined
+var i = 0;
+undefined
+while(i<4) {
+    console.log(array[i]);
+    i++;
+};
+VM32804:2 1
+VM32804:2 23
+VM32804:2 4
+VM32804:2 undefined
+3
