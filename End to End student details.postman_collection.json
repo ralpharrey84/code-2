@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "5ea0381d-deb9-46b3-8b17-83f775b780fb",
+		"name": "End to End student details",
+		"description": "This has added and retrieved studetails.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://thetestingworldapi.com/api/studentsDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"first_name\": \"Hono\",\r\n  \"middle_name\": \"Chris\",\r\n  \"last_name\": \"Mbe 4\",\r\n  \"date_of_birth\": \"16/05/1989\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://thetestingworldapi.com/api/studentsDetails",
+					"protocol": "http",
+					"host": [
+						"thetestingworldapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"studentsDetails"
+					]
+				},
+				"description": "Add details"
+			},
+			"response": []
+		},
+		{
+			"name": "http://thetestingworldapi.com/api/studentsDetails/68514",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://thetestingworldapi.com/api/studentsDetails/68514",
+					"protocol": "http",
+					"host": [
+						"thetestingworldapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"studentsDetails",
+						"68514"
+					]
+				},
+				"description": "Retrived details"
+			},
+			"response": []
+		},
+		{
+			"name": "http://thetestingworldapi.com/api/studentsDetails",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4a4c4c03-9670-47a3-8688-8ff57d1a31b5",
+						"exec": [
+							"//console.log(postman.getEnvironmentVariable('url'))\r",
+							"//postman.setEnvironmentVariable('name','Ralph')\r",
+							"//postman.clearEnvironmentVariable('name')\r",
+							"//console.log(request.data)\r",
+							"//console.log(request.url)\r",
+							"//console.log(request.method)\r",
+							"\r",
+							"//postman.setGlobalVariable('username','rayra')\r",
+							"//console.log(postman.getGlobalVariable('username'))\r",
+							"postman.clearGlobalVariable('username')\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "e74bd83b-984a-4ddc-ae42-8c1320d62feb",
+						"exec": [
+							"//console.log(responseBody)\r",
+							"//ja1=JSON.parse(responseBody)\r",
+							"//console.log(ja1.id)\r",
+							"//console.log(ja1.first_name)\r",
+							"//console.log(ja1.last_name)\r",
+							"console.log(responseTime)\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 74524,\r\n  \"first_name\": \"jtest\",\r\n  \"middle_name\": \"jay\",\r\n  \"last_name\": \"testj\",\r\n  \"date_of_birth\": \"27/08/2016\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://thetestingworldapi.com/api/studentsDetails",
+					"protocol": "http",
+					"host": [
+						"thetestingworldapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"studentsDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

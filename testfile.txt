@@ -1,0 +1,21 @@
+vacationspots.push('spain');
+
+var vacationspots =['france','canada','ivory coast'];
+ 
+var i =0;
+for(i=0;i<vacationspots.length;i++); {
+  console.log(vacationspots[i]);
+};
+
+
+
+
+http://thetestingworldapi.com/api/studentsDetails/{id}
+
+{
+  "id": 1,
+  "first_name": "sample string 2",
+  "middle_name": "sample string 3",
+  "last_name": "sample string 4",
+  "date_of_birth": "sample string 5"
+}
